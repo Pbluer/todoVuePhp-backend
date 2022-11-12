@@ -33,19 +33,19 @@ return;
 
 function cadastro( String $login, String $password, String $nome )
 {   
-   $result = User::create( $login, $password, $nome );
-   echo json_encode($result);
+    $result = User::create( $login, $password, $nome );
+    echo json_encode([$result]) ;
 }
 
 function login( String $login, String $password )
 {   
-   $result = User::login( $login, $password );
-   echo json_encode($result);
+    $result = User::login( $login, $password );
+    echo json_encode([$result]) ;
 }
 
 
 function checkLogin( String $token )
 {
     $result = User::isLoggin( $token );
-    echo json_encode($result);
+    echo json_encode([$result])     ;
 }

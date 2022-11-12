@@ -4,7 +4,7 @@
 require("./dataBase/dataBase.php");
 
 class Anotacao {
-
+    
     static function gravar( Int $codigo, String $titulo, String $conteudo, String $token ): Array
     {
         $data = date('Y-m-d H:i:s');
@@ -51,7 +51,7 @@ class Anotacao {
         }else{
             return [
                 'status' => 'success',
-                'mensage' => 'Cadastro efetuado com sucesso'
+                'mensage' => 'Anotação cadastrada efetuado com sucesso'
             ];
         }
         
