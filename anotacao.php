@@ -14,7 +14,7 @@ if ($funcao === 'gravar') {
         $funcao,
         $_POST['codigo'] ?: 0,
         $_POST['titulo'],
-        $_POST['conteudo'],
+        $_POST['conteudo'] ?: '',
         $_POST['usuario']
     );
 }
